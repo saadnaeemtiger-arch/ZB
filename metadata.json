@@ -1,0 +1,6 @@
+{
+  "name": "ZB Bakery",
+  "description": "An elegant, premium, and professional full-stack website for ZB Bakery, showcasing artisanal sourdoughs, handcrafted pastries, customizable celebration cakes, and featuring an interactive AI Pastry Chef assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

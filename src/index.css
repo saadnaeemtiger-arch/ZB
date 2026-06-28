@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-amber-50: #fdfbf7;
+  --color-amber-100: #fbf5e6;
+  --color-amber-200: #f5e6c4;
+  --color-gold-100: #faf6eb;
+  --color-gold-200: #f0e6cc;
+  --color-gold-300: #e3d3aa;
+  --color-gold-400: #d1b87a;
+  --color-gold-500: #c5a059;
+  --color-gold-600: #b58f4a;
+  --color-gold-700: #8c6323;
+  --color-cocoa-50: #fdfbf7;
+  --color-cocoa-100: #f9f6f0;
+  --color-cocoa-200: #ead9cc;
+  --color-cocoa-300: #dcbfa8;
+  --color-cocoa-400: #be977c;
+  --color-cocoa-500: #a5785a;
+  --color-cocoa-600: #8a5a3e;
+  --color-cocoa-700: #6f442d;
+  --color-cocoa-800: #54311f;
+  --color-cocoa-900: #5c4033;
+  --color-cocoa-950: #3d2b1f;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-cocoa-50);
+    color: var(--color-cocoa-950);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 900;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cocoa-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-cocoa-200);
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cocoa-400);
+}
+
+/* Watermark background class */
+.text-watermark {
+  font-family: var(--font-serif);
+  font-size: 280px;
+  font-weight: 900;
+  line-height: none;
+  font-style: italic;
+  user-select: none;
+}
